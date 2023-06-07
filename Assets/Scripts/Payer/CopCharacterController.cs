@@ -22,10 +22,14 @@ public class CopCharacterController : MonoBehaviour
     public float IsComingDownLatency = 1.5f;
     public float RunLatency = 0.45f;
 
+    public Transform target;
+    private Vector3 offset;
+
     private float horizontalInput;
     // Start is called before the first frame update
     void Start()
     {
+        offset = transform.position - target.position;
         controller = GetComponent<CharacterController>();
     }
 
@@ -125,6 +129,11 @@ public class CopCharacterController : MonoBehaviour
             }
         }
 
+    }
+    void LateUpdate()
+    {
+        Vector3 newPosition = new Vector3(transform.position.x, transform.position.y, offset.z + target.position.z);
+        transform.position = Vector3.Lerp(transform.position, newPosition, 10 * Time.deltaTime);
     }
     IEnumerator Jump()
     {

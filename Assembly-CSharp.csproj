@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\CoinScripts\RotateCoin.cs" />
     <Compile Include="Assets\Scripts\AmyController.cs" />
     <Compile Include="Assets\Scripts\CoinScripts\RunCount.cs" />
+    <Compile Include="Assets\Scripts\Environment\BranchCollision.cs" />
     <Compile Include="Assets\Scripts\Environment\LevelBoundary.cs" />
     <Compile Include="Assets\Scripts\PlayerContoller.cs" />
     <Compile Include="Assets\Scripts\CameraFollowPlayer.cs" />

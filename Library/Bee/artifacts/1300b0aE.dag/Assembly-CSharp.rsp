@@ -362,6 +362,7 @@
 "Assets/Scripts/CoinScripts/DispayCoins.cs"
 "Assets/Scripts/CoinScripts/RotateCoin.cs"
 "Assets/Scripts/CoinScripts/RunCount.cs"
+"Assets/Scripts/Environment/BranchCollision.cs"
 "Assets/Scripts/Environment/Collision.cs"
 "Assets/Scripts/Environment/LevelBoundary.cs"
 "Assets/Scripts/Payer/AbbieCharacterController.cs"

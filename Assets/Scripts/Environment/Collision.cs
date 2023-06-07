@@ -10,6 +10,12 @@ public class Collision : MonoBehaviour
     public GameObject CharacterModel;
     public float kickDelay;
     public float fallDelay;
+
+    void Start()
+    {
+        Cop.GetComponent<CapsuleCollider>().enabled = false;
+        Player.GetComponent<CapsuleCollider>().enabled = false;
+    }
     // Start is called before the first frame update
     void OnTriggerEnter(Collider other)
     {
